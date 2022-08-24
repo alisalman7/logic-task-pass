@@ -1,1 +1,55 @@
+#Q1 
+test_str = "ali salamn hashem"
+print ("The original string is : " + test_str)
+new_str = ""
+  
+for i in range(len(test_str)):
+    if i != 2:
+        new_str = new_str + test_str[i]
+  
 
+print ("The string after removal of i'th character : " + new_str)
+
+
+
+
+
+# Q2                    
+num = 29
+flag = False
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            flag = Tru
+            break
+if flag:
+    print(num, "is not a prime number")
+else:
+    print(num, "is a prime number")
+    
+    
+    #Q3                   
+    def countChar(str, x):
+    count = 0
+    for i in range(len(str)):
+        if (str[i] == x) :
+            count += 1
+    n = 10
+    repetitions = n // len(str)
+       count = count * repetitions
+ 
+   
+    l = n % len(str)
+    for i in range(l):
+        if (str[i] == x):
+            count += 1
+    return count
+ 
+
+str = "abcac"
+print(countChar(str, 'a'))
+    
+    
+    
+    
+    
